@@ -1,0 +1,115 @@
+body{
+    background-image:url("../images/sfondo_login.jpg");
+    position:relative;
+    margin:0;
+    font-family: Arial, sans-serif;
+    }
+    
+    #container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position:absolute;
+    top:20%;
+    bottom:20%;
+    left:20%;
+    right:20%;
+    background-image: url("../images/sfondo_piccolo_login.jpg");
+    color:ivory;
+    border:2px solid black;
+    border-radius: 25px;
+    }
+    
+    h1{
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    
+    form{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 35%;
+        width: 100%;
+    }
+    
+    form label{
+        margin-bottom: 10px;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        width:250px;
+    }
+    
+    div .invalid{
+        color:ivory;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    div span{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    div a{
+        margin-bottom:30px;
+        font-size:20px;
+        color:lightblue;
+    }
+    
+    #submit{
+        cursor: pointer;
+        margin-bottom: 30px;
+        width: 100px;
+        height: 30px;
+        border-radius: 15px;
+    }
+
+    @media(max-width:500px){
+            
+            #container{
+            border-radius: 15px;
+            justify-content: space-around;
+            }
+            
+            h1{
+                font-size: 20px;
+            }
+            
+            form{
+                height: 35%;
+                width:auto;
+            }
+            
+            form label{
+                width:auto;
+                display:block;
+                margin-left: 20px;
+            }
+            
+            div .invalid{
+                font-size: 14px;
+            }
+            
+            div span{
+                font-size: 18px;
+            }
+            
+            div a{
+                font-size:18px;
+            }
+            
+            #submit{
+                width: 60px;
+                height: 20px;
+                border-radius: 10px;
+            }
+
+    }
